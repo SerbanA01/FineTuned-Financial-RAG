@@ -15,7 +15,7 @@ This work is a significant expansion of my **Bachelor's Thesis, for which I earn
 
 ### 🎥 Video Demo
 
-[![FinSecureAI Demo Video](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](https://youtu.be/iDzdU66SlCA)
+[![FinSecureAI Demo Video](https://img.youtube.com/vi/iDzdU66SlCA/0.jpg)](https://youtu.be/iDzdU66SlCA)
 
 ### 🏛️ High-Level Architecture
 
