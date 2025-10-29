@@ -103,4 +103,4 @@ This repository and its contents are intended for **educational and demonstratio
 
 *   **For Technical Demonstration:** The primary purpose of this project is to showcase the architecture, techniques, and engineering challenges involved in building a complex, end-to-end RAG system. The code is a demonstration of what is possible, not a source of financial truth.
 
-*   **Project Name & Non-Affiliation:** The name "FinSecureAI" is used for project identification purposes only. This is **not a commercial product or brand**. No affiliation with any existing companies or entities is intended or implied. The author shall not be held liable for any confusion or legal issues arising from the use of the project name.
+*   **Project Name & Non-Affiliation:** The name "FinSecureAI" is used for project identification purposes only. This is **not a commercial product or brand**. No affiliation with any existing companies or entities is intended or implied. The author shall not be held liable for any confusion or legal issues.
