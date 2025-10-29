@@ -30,14 +30,20 @@ To answer complex questions accurately, the system doesn't rely on a single LLM 
 #### **1. Intent Classification**
 The first step is to understand the user's true goal. The initial query is passed to a fine-tuned **Intent Model** that classifies it into categories like `DOCUMENT_SEARCH`, `MARKET_DATA_ONLY`, or a `HYBRID` of both. This ensures we don't waste time searching documents if the user just wants a stock price.
 
+> **Model Link:** The fine-tuned model for this step is available here: **[SerbanA01/model_classification on Hugging Face](https://huggingface.co/SerbanA01/model_classification)*
+
 #### **2. Intelligent Query Parsing**
 Once the intent is known, a second fine-tuned **Metadata Model** parses the query to extract structured information. It identifies crucial details like company tickers (e.g., "Apple" -> "AAPL"), fiscal years, quarters, and report types ("10-K", "earnings transcript"). This structured data is essential for precise document retrieval.
+
+> **Model Link:** The fine-tuned model for this step is available here: **[SerbanA01/model_metadata on Hugging Face](https://huggingface.co/SerbanA01/model_metadata)**
 
 #### **3. Retrieval & Re-ranking**
 With the extracted metadata, the **Retriever** queries the Qdrant vector database for the most relevant document chunks. But we don't stop there. The initial results are passed to a powerful **Cross-Encoder Re-ranker Model**, which re-scores the documents based on their semantic relevance to the original query, ensuring only the highest quality context is used.
 
 #### **4. Synthesized Generation**
 Finally, the refined context, the original query, and a carefully crafted prompt are sent to the fine-tuned **Final Answer Model**. This model's sole purpose is to synthesize all the information into a coherent, accurate, and easy-to-read answer.
+
+> **Model Link:** The fine-tuned model for this step is available here: **[SerbanA01/model_answer on Hugging Face](https://huggingface.co/SerbanA01/model_answer)**
 
 ---
 
